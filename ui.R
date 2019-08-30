@@ -1,6 +1,7 @@
 library(shinydashboard)
 
 shinyUI(dashboardPage(
+  
   dashboardHeader(title = "Shiny Project"),
   
   dashboardSidebar(
@@ -56,6 +57,7 @@ shinyUI(dashboardPage(
      
      tabItem(tabName = "Pop",
              fluidRow(box(plotlyOutput("graph3"), height = 500, width = 10))),
+               
      
      tabItem(tabName = "map1",
              fluidRow(box(htmlOutput("map_glob1"), width = 10)),
